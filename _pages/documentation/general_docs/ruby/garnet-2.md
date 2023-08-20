@@ -39,7 +39,7 @@ following paper:
 Garnet2.0 provides a cycle-accurate micro-architectural implementation
 of an on-chip network router. It leverages the [Topology](
 /documentation/general_docs/ruby/interconnection-network#Topology) and [Routing](
-/documentation/general_docs/ruby/interconnection-network#Routing) frastructure
+/documentation/general_docs/ruby/interconnection-network#Routing) infrastructure
 provided by gem5's ruby memory system model. The default router is a
 state-of-the-art 1-cycle pipeline. There is support to add additional
 delay of any number of cycles in any router, by specifying it within the
