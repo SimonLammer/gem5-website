@@ -70,13 +70,14 @@ implements a standard cache structure:
 
 **Cached memory reads** that match particular cache tag (with Valid & Read
 flags) will be completed (by sending ReadResp to CPU) after a configurable
-time. Otherwise, the request is forwarded to Miss Status and Handling Register
+time. Otherwise, the request is forwarded to Miss Status Holding Register
 ([MSHR](http://doxygen.gem5.org/release/current/classgem5_1_1MSHR.html)) block.
 
 **Cached memory writes** that match particular cache tag (with Valid, Read &
 Write flags) will be completed (by sending WriteResp CPU) after the same
-configurable time. Otherwise, the request is forwarded to Miss Status and
-Handling Register(MSHR) block.
+configurable time. Otherwise, the request is forwarded to Miss Status Holding
+Register ([MSHR](http://doxygen.gem5.org/release/current/classgem5_1_1MSHR.html))
+block.
 
 **Uncached memory reads** are forwarded to [MSHR](
 http://doxygen.gem5.org/release/current/classgem5_1_1MSHR.html) block.
@@ -126,7 +127,7 @@ and Write flags are set.
 
 ### MSHR and Write Buffer Queues
 
-Miss Status and Handling Register ([MSHR](
+Miss Status Holding Register ([MSHR](
 http://doxygen.gem5.org/release/current/classgem5_1_1MSHR.html)) queue holds the list of
 CPU’s outstanding memory requests that require read access to lower memory
 level. They are:
