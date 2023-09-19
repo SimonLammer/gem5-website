@@ -16,7 +16,7 @@ This tutorial is based on the process used to make the _RiscvMatched_, a RISC-V 
 
 This tutorial will create a single-channeled DDR4 memory of size 2 GiB, a core using the MinorCPU and the RISC-V ISA though the same process can be used for another type or size of memory, ISA and core.
 
-Likewise, this tutorial will utilize the UniqueCacheHierarchy made in the [Developing Your Own Components Tutorial](https://www.gem5.org/documentation/gem5-stdlib/develop-own-components-tutorial), though anyother cache hierarchy may be used.
+Likewise, this tutorial will utilize the UniqueCacheHierarchy made in the [Developing Your Own Components Tutorial](https://www.gem5.org/documentation/gem5-stdlib/develop-own-components-tutorial), though any other cache hierarchy may be used.
 
 First, we start by importing the components and stdlib features we require.
 
